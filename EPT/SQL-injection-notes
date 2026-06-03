@@ -1,0 +1,70 @@
+# SQL Injection (SQLi) Notes
+
+This file contains my notes on SQL Injection as part of my Ethical Hacking & Penetration Testing (EPT) studies and cybersecurity learning.
+
+---
+
+## What is SQL Injection?
+
+SQL Injection is a web security vulnerability that occurs when an attacker is able to insert or “inject” malicious SQL code into an input field that is not properly secured.
+
+This can allow attackers to:
+- View sensitive data
+- Modify database records
+- Bypass authentication
+- Delete data
+
+---
+
+## Why it happens
+
+SQL injection typically occurs when:
+- User input is not properly validated
+- Queries are dynamically built using string concatenation
+- No parameterized queries are used
+
+---
+
+## Example (Unsafe Query)
+
+```sql id="sql2"
+SELECT * FROM users WHERE username = 'admin' AND password = 'password';
+
+
+
+' OR '1'='1
+
+SELECT * FROM users WHERE username = '' OR '1'='1' AND password = '';
+
+This may allow login bypass because the condition is always true.
+
+# Types of SQL Injection
+1. In-band SQL Injection
+Attacker gets results directly in the application response
+2. Blind SQL Injection
+No visible error messages
+Attacker infers data through true/false responses
+3. Error-based SQL Injection
+Uses database error messages to extract information
+
+# Prevention Methods
+1. Parameterized Queries (Best Practice)
+Separates SQL code from user input
+Prevents input from being executed as SQL
+2. Input Validation
+Restricting expected input types and formats
+3. Least Privilege Database Accounts
+Limits damage if an injection occurs
+4. Web Application Firewalls (WAF)
+Helps detect and block malicious input patterns
+
+# Why SQL Injection is Dangerous
+Can expose sensitive user data
+Can lead to full database compromise
+One of the most common web vulnerabilities (OWASP Top 10)
+
+# What I Learned
+SQL injection occurs due to unsafe handling of user input
+Attackers can manipulate queries to bypass authentication
+Parameterized queries are the most effective defence
+Even small input fields can become attack points

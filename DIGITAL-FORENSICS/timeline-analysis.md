@@ -1,48 +1,24 @@
 # Timeline Analysis
 
-This file contains notes on timeline analysis during digital investigations.
-
----
-
 ## What is Timeline Analysis?
 
-Timeline analysis is the process of reconstructing events using timestamps from multiple sources.
+Timeline analysis is the process of arranging events in chronological order during an investigation.
 
----
+## Sources of Timeline Data
 
-## Common Sources
-
-- Browser history
-- Event logs
 - File timestamps
-- Prefetch files
-- Network logs
+- Event logs
+- Browser history
+- System activity records
 
----
+## Why is it Important?
 
-## Why is it Useful?
+Timelines help investigators understand what happened before, during, and after an incident.
 
-Timeline analysis helps investigators:
+## Key Point
 
-- Determine what happened
-- Identify suspicious activity
-- Establish sequences of events
-
----
-
-## Example
-
-A timeline may show:
-
-1. User downloads a file
-2. File executes
-3. New process starts
-4. Network connection is established
-
----
+A timeline can reveal suspicious activity that may otherwise be overlooked.
 
 ## What I Learned
 
-- Individual artifacts provide clues.
-- Combining multiple artifacts creates a clearer picture.
-- Timelines help investigators reconstruct events.
+Timeline analysis helps investigators reconstruct events and identify patterns of activity.

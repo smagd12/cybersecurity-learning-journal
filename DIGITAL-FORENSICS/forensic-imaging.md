@@ -1,37 +1,23 @@
 # Forensic Imaging
 
-This file contains notes on forensic imaging and evidence preservation.
-
----
-
 ## What is Forensic Imaging?
 
-A forensic image is an exact bit-for-bit copy of a storage device.
+Forensic imaging is the process of creating an exact bit-for-bit copy of a storage device.
 
-Investigators create forensic images to preserve original evidence.
+## Why is it Important?
 
----
-
-## Why Not Investigate the Original Device?
-
-Working directly on original evidence may:
-
-- Alter data
-- Change timestamps
-- Compromise evidence integrity
-
----
+It allows investigators to analyse evidence without modifying the original device.
 
 ## Benefits
 
-- Preserves original evidence
-- Allows repeatable analysis
-- Supports investigation accuracy
+- Preserves evidence
+- Maintains integrity
+- Supports repeatable analysis
 
----
+## Verification
+
+Hash values are commonly used to verify that the forensic image matches the original device.
 
 ## What I Learned
 
-- Investigators work from copies whenever possible.
-- Evidence preservation is a key principle of digital forensics.
-- Forensic images help maintain data integrity.
+Forensic imaging helps preserve digital evidence while allowing investigators to safely perform analysis.

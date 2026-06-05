@@ -1,27 +1,12 @@
 # Chain of Custody
 
-This file contains notes on the importance of maintaining evidence integrity during digital investigations.
-
----
-
 ## What is Chain of Custody?
 
-Chain of custody is the documented process of tracking evidence from the moment it is collected until it is presented or archived.
-
-The purpose is to ensure evidence remains reliable and has not been altered.
-
----
+Chain of Custody is the process of documenting how digital evidence is collected, handled, transferred, and stored.
 
 ## Why is it Important?
 
-A proper chain of custody helps:
-
-- Preserve evidence integrity
-- Demonstrate accountability
-- Support investigations
-- Ensure evidence remains trustworthy
-
----
+It helps ensure evidence remains trustworthy and has not been altered during an investigation.
 
 ## Information Typically Recorded
 
@@ -29,12 +14,12 @@ A proper chain of custody helps:
 - Date and time of collection
 - Location of collection
 - Who accessed the evidence
-- Any transfers of custody
+- When evidence was transferred
 
----
+## Key Point
+
+If the chain of custody is broken, the integrity of the evidence may be questioned.
 
 ## What I Learned
 
-- Evidence must be handled carefully.
-- Documentation is just as important as collection.
-- Maintaining a chain of custody helps preserve trust in the investigation.
+Chain of custody helps maintain the integrity and admissibility of digital evidence throughout an investigation.

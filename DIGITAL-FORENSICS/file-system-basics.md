@@ -1,43 +1,29 @@
 # File System Basics
 
-This file contains notes on file systems and their importance in digital forensics.
-
----
-
 ## What is a File System?
 
-A file system controls how data is stored and organized on a storage device.
-
----
+A file system is the method an operating system uses to organize, store, and retrieve files.
 
 ## Common File Systems
 
-### NTFS
-Commonly used by Windows systems.
+- NTFS (Windows)
+- FAT32
+- exFAT
+- ext4 (Linux)
 
-### FAT32
-Older file system still found on removable media.
+## Why is it Important in Forensics?
 
-### exFAT
-Often used for USB drives and external storage.
+File systems contain valuable information such as:
 
----
-
-## Why File Systems Matter
-
-File systems contain metadata that may assist investigations.
-
-Examples include:
-
-- Creation times
-- Modification times
-- File locations
+- File names
+- Timestamps
 - Permissions
+- Deleted file records
 
----
+## Key Point
+
+Investigators often examine file systems to determine what activity occurred on a device.
 
 ## What I Learned
 
-- File systems store more than just file contents.
-- Metadata can provide valuable evidence.
-- Understanding file systems supports forensic investigations.
+Understanding file systems helps investigators locate and analyse evidence stored on digital devices.
